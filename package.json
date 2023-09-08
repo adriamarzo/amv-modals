@@ -20,7 +20,6 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "check-types": "tsc --pretty --noEmit",
-    "semantic-release": "semantic-release",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -79,5 +78,8 @@
   "bugs": {
     "url": "https://github.com/adriamarzo/amv-modals/issues"
   },
-  "homepage": "https://github.com/adriamarzo/react-alert-system#readme"
+  "homepage": "https://github.com/adriamarzo/react-alert-system#readme",
+  "release": {
+    "branches": ["main"]
+  }
 }
