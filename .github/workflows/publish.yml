@@ -57,6 +57,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy-to-gh-pages:
+    permissions:
+      pages: write
+
     runs-on: ubuntu-latest
 
     needs: [publish]
