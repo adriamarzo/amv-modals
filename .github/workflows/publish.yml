@@ -58,7 +58,9 @@ jobs:
 
   deploy-to-gh-pages:
     permissions:
+      contents: read
       pages: write
+      id-token: write
 
     runs-on: ubuntu-latest
 
