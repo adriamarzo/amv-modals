@@ -12,7 +12,13 @@ export default defineConfig({
       fileName: 'amv-modals'
     },
     rollupOptions: {
-      external: ['react', 'react-dom']
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'react',
+          'react-dom': 'react-dom'
+        }
+      }
     }
   },
   plugins: [react(), dts({ exclude: ['./src/stories'] })]

@@ -10,7 +10,7 @@ module.exports = {
         node: true
       },
       files: [
-        '.eslintrc.{js,cjs}'
+        '.eslintrc.{js,cjs}', 'commitlint.config.cjs'
       ],
       parserOptions: {
         sourceType: 'script'
