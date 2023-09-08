@@ -3,11 +3,11 @@ A simple and customizable modal management library for ReactJS application.
 
 ---
 
-## Installation [WIP]
+## Installation
 `npm i --save amv-modals` or `yarn add amv-modals`
 
 # Docs
-The library uses Javascript custom events, React Portals and hooks.
+The library uses Javascript custom events, React Portals and hooks. You can take a look from [here](https://adriamarzo.github.io/amv-modals/).
 
 ### 1. Instantiate the Modal Manager component
 This library provides a component named `ModalManager`. This component is the responsible to get the existing DOM element, or create it in case it does not exist, from where the modals will be rendered.
@@ -82,5 +82,5 @@ But it is recommended that any `click` interation implemented in the modal inclu
 # CI/CD [WIP]
 This project is configured using:
 - Semantic Release to automate the versioning of the package.
-- GitHub actions to perform the required steps (build, test and upload to repository) to publish the resulting package.
+- GitHub actions to perform the required steps (build and upload to repository) to publish the resulting package.
 - Npmjs as a repository where we can download all the versions of this library.
