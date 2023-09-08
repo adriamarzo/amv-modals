@@ -32,18 +32,14 @@ jobs:
   publish:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [17.x, 18.x]
-
     needs: [quality]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
           cache: "npm"
       - name: Install
         run: npm ci
@@ -59,18 +55,14 @@ jobs:
   deploy-to-gh-pages:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [17.x, 18.x]
-        
     needs: [publish]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
           cache: "npm"
       - name: Install
         run: npm ci
