@@ -1,43 +1,11 @@
 {
-  "name": "amv-modals",
-  "version": "0.0.0-development",
-  "description": "Modal management using reactJS",
-  "type": "module",
-  "main": "./dist/amv-modals.umd.cjs",
-  "module": "./dist/amv-modals.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/amv-modals.js",
-      "require": "./dist/amv-modals.umd.cjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "check-types": "tsc --pretty --noEmit",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "keywords": [
-    "modal",
-    "react",
-    "reactjs",
-    "typescript",
-    "management"
-  ],
   "author": {
     "name": "adria marzo"
   },
-  "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+  "bugs": {
+    "url": "https://github.com/adriamarzo/amv-modals/issues"
   },
-  "license": "MIT",
+  "description": "Modal management using reactJS",
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
@@ -70,17 +38,49 @@
     "vite": "^4.3.0",
     "vite-plugin-dts": "^3.5.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adriamarzo/amv-modals.git"
+  "exports": {
+    ".": {
+      "import": "./dist/amv-modals.js",
+      "require": "./dist/amv-modals.umd.cjs"
+    }
   },
-  "bugs": {
-    "url": "https://github.com/adriamarzo/amv-modals/issues"
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/adriamarzo/amv-modals#readme",
+  "keywords": [
+    "modal",
+    "react",
+    "reactjs",
+    "typescript",
+    "management"
+  ],
+  "license": "MIT",
+  "main": "./dist/amv-modals.umd.cjs",
+  "module": "./dist/amv-modals.js",
+  "name": "amv-modals",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-  "homepage": "https://github.com/adriamarzo/react-alert-system#readme",
   "release": {
     "branches": [
       "main"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriamarzo/amv-modals.git"
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "build-storybook": "storybook build",
+    "check-types": "tsc --pretty --noEmit",
+    "dev": "vite",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "storybook": "storybook dev -p 6006"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "0.0.0-development"
 }
