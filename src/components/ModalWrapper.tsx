@@ -8,7 +8,9 @@ const MODAL_WRAPPER_STYLES: CSSProperties = {
   top: 0,
   left: 0,
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center'
 }
 const WRAPPER_ID = 'modal-wrapper'
 
